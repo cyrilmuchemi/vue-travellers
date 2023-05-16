@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+a {
+  color: hsl( var(--clr-white) );
+}
+
 body,
 h1,
 h2,
@@ -178,7 +182,7 @@ border: 0;
 
 .large-button {
   position: relative;
-  display: grid;
+  display: inline-grid;
   z-index: 1;
   place-items: center;
   padding: 0 2em;
