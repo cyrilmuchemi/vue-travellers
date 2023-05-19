@@ -19,7 +19,7 @@ navToggle.addEventListener("click", () => {
 
 <template>
     <div class="home">
-     <div class="grid-container grid-container--home">
+     <main class="grid-container grid-container--home">
         <div>
         <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to 
         <span class="fs-900 d-block ff-serif text-white">Space</span></h1>
@@ -28,7 +28,7 @@ navToggle.addEventListener("click", () => {
         <div>
         <a href="#" class="large-button uppercase ff-serif text-dark bg-white">Explore</a>
         </div>
-    </div>
+    </main>
     </div>
 </template>
 

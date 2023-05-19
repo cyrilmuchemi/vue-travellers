@@ -1,7 +1,7 @@
 <template>
  <div class="primary-header flex">
   <div>
-    <img src="./assets/shared/logo.svg" alt="space-tourism-logo"/>
+    <img class="logo" src="./assets/shared/logo.svg" alt="space-tourism-logo"/>
   </div>
   <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
   <nav>

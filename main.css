@@ -271,12 +271,32 @@ border: 0;
   transform: scale(1.5);
 }
 
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+}
+
 .primary-navigation {
+  gap: clamp(1.5rem, 5vw, 3.5rem);
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0; 
   background: hsl( var(--clr-white) / 0.05);
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: .5em;
 }
 
 .mobile-nav-toggle {
@@ -337,13 +357,35 @@ border: 0;
   }
 }
 
-.primary-navigation a {
-  text-decoration: none;
+@media (min-width: 35em) and (max-width: 45em) {
+  .primary-navigation {
+      padding-inline: 3rem;
+  }
+  
+  .primary-navigation a > span {
+      display: none;
+  }
 }
 
-.primary-navigation a > span {
-  font-weight: 700;
-  margin-right: .5em;
+@media (min-width: 45em) {
+  .primary-header::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px;
+    margin-right: -3rem;
+    width: 100%;
+    background: hsl( var(--clr-white) / .25);
+    order: 1;
+  }
+
+   nav {
+   order: 2;
+  }
+  .primary-navigation {
+      padding-inline: 2.6rem;
+      margin-top: 0.7rem;
+  }
 }
 
 .underline-indicators > * {
@@ -395,7 +437,6 @@ border: 0;
   background-image: url(./src/assets/home/background-home-mobile.jpg);
   background-size: cover;
   min-height: 100vh;
-  background-position: bottom center;
 }
 
 @media (min-width: 35rem) {
@@ -407,5 +448,6 @@ border: 0;
 @media (min-width: 45rem) {
   .home {
       background-image: url(./src/assets/home/background-home-desktop.jpg);
+      margin-top: -6.5rem;
   }
 }
