@@ -3,8 +3,9 @@
   <div>
     <img src="./assets/shared/logo.svg" alt="space-tourism-logo"/>
   </div>
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
   <nav>
-    <ul class="primary-navigation underline-indicators flex">
+    <ul class="primary-navigation underline-indicators flex"  data-visible="false">
       <li class="active">
         <a class="uppercase ff-sans-cond letter-spacing-2" >
           <span>00</span><RouterLink to="/">Home</RouterLink> </a>
@@ -24,7 +25,10 @@
     </ul>
   </nav>  
   </div>
-  <div class="container">
+  <div>
     <RouterView></RouterView>
   </div>
 </template>
+
+
+
