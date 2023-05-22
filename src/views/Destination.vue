@@ -1,6 +1,5 @@
 <template>
-    <div class="destination text-white">
-        <main id="main" class="grid-container  grid-container--destination">
+        <main id="destination" class="grid-container  grid-container--destination">
             <h1 class="numbered-title"><span aria-hidden="true">01</span>Pick your destination</h1>
             <img src="../assets/destination/image-moon.png" alt="the moon"/>
 
@@ -28,6 +27,5 @@
       </div>
     </article>
         </main>
-    </div>
 </template>
 
